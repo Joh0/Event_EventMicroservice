@@ -1,14 +1,17 @@
 server:
-  port: 8080
+  port: ${PORT:8080}
 spring:
   application:
     name: event
   profiles:
     active: "prod"
   datasource:
-    url: jdbc:mysql://localhost:3306/eventmicroservicedb?createDatabaseIfNotExist=true
-    username: root
-    password: password
+#    url: jdbc:mysql://localhost:3306/eventmicroservicedb?createDatabaseIfNotExist=true
+#    username: root
+#    password: password
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
