@@ -1,0 +1,11 @@
+package com.example.event.constants;
+
+
+public class EventConstant {
+
+    public static final String STATUS_201="201";
+    public static final String MESSAGE_201="Event created successfully";
+    public static final String STATUS_200="200";
+    public static final String MESSAGE_200_UPDATE="Event updated successfully";
+    public static final String MESSAGE_200_DELETE="Event deleted successfully";
+}
